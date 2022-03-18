@@ -18,13 +18,8 @@ import {
 import { RecoilRoot } from "recoil";
 
 function App() {
-  const {
-    loginWithRedirect,
-    getIdTokenClaims,
-    logout,
-    isAuthenticated,
-    isLoading,
-  } = useAuth0();
+  const { loginWithRedirect, getIdTokenClaims, isAuthenticated, isLoading } =
+    useAuth0();
   const [token, setToken] = useState("");
 
   if (isLoading) {

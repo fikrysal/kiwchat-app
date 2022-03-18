@@ -1,6 +1,5 @@
 import { gql, useSubscription } from "@apollo/client";
 import { useAuth0 } from "@auth0/auth0-react";
-import { BubbleChart } from "@material-ui/icons";
 import { useRecoilState } from "recoil";
 import MessageBubble from "../../../components/MessageBuble";
 import { selectedUserState } from "../../../recoil";
